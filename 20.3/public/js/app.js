@@ -1,4 +1,4 @@
-angular.module('OMDBApp',['ui.router'])
+angular.module('omdbApp',['ui.router'])
 .config(function($stateProvider, $urlRouterProvider, $locationProvider){
 
   $urlRouterProvider.otherwise('/home');
@@ -7,7 +7,7 @@ angular.module('OMDBApp',['ui.router'])
   .state ('home',{
     url: '/home',
     templateUrl:'/views/home.html';
-  })
+  });
 
   $locationProvider.html5Mode(true);
 });
